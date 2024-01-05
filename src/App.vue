@@ -9,7 +9,7 @@ import Mycomp from './components/Mycomp.vue'
 
     <div class="wrapper">
       <HelloWorld msg="Bash on regarless" />
-      <Mycomp name="Deepak" gender="his" callsign="Dick"/>
+      <Mycomp name="Deepak" gender="his" callsign="Danny"/>
     </div>
   </header>
 </template>

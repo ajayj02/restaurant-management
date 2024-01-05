@@ -3,6 +3,9 @@
     <h2>This is my email address: {{ email }}</h2>
     <h2>This is my mobile number: {{ mobile }}</h2>
     <h1>Developer's Full Name: {{ getname('Ajay Joshi') }} address: {{ getAddress() }}</h1>
+    <p>customer info: {{ personalInfo().name }}</p>
+    <button @click="count=count+10">Alternate mobile no.</button>
+    <button >Count: {{ count }}</button>
     </template>
 
 <script>
@@ -13,14 +16,24 @@ data() {
     return {
         email: 'joshiajay311@gmail.com',
         mobile: '+91-8586934166',
+        count: 0,
         getname: function(arg) {
             return arg
-        }
+        },
+        counter:function() {
+        count++;
+    }
     }
 },
 methods:{
     getAddress() {
         return "gole market New delhi-110001"
+    },
+    personalInfo() {
+        return{
+            name:"Niel",
+            favFood: "Pasta"
+        }
     }
 }
 }
