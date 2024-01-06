@@ -6,6 +6,8 @@
     <p>customer info: {{ personalInfo().name }}</p>
     <button @click="count=count+10">Alternate mobile no.</button>
     <button >Count: {{ count }}</button>
+    <input type="text" v-model="caste">
+    <h2>{{ caste }}</h2>
     </template>
 
 <script>
@@ -15,6 +17,7 @@ name: "Mycomp",
 data() {
     return {
         email: 'joshiajay311@gmail.com',
+        caste: 'EWS',
         mobile: '+91-8586934166',
         count: 0,
         getname: function(arg) {
@@ -35,6 +38,7 @@ methods:{
             favFood: "Pasta"
         }
     }
+}   
 }
-}
+
 </script>

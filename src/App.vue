@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import Mycomp from './components/Mycomp.vue'
+import LoginForm from './components/Login-form.vue';
 </script>
 
 <template>
@@ -10,6 +11,8 @@ import Mycomp from './components/Mycomp.vue'
     <div class="wrapper">
       <HelloWorld msg="Bash on regarless" />
       <Mycomp name="Deepak" gender="his" callsign="Danny"/>
+
+      <Login-form />
     </div>
   </header>
 </template>
